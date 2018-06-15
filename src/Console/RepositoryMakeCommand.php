@@ -1,6 +1,6 @@
 <?php
 
-namespace Naust\RepositoryCommand\Console;
+namespace Naust\ArtisanBooster\Console;
 
 use Illuminate\Support\Str;
 use InvalidArgumentException;
@@ -24,9 +24,9 @@ class RepositoryMakeCommand extends GeneratorCommand
 
     protected $type = 'Repository';
 
-    public function fire()
+    public function handle()
     {
-        if (parent::fire() === false) {
+        if (parent::handle() === false) {
             return;
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lx3\RepositoryCommand\Console;
+namespace Naust\ArtisanBooster\Console;
 
 use Symfony\Component\Console\Input\InputOption;
 
@@ -11,7 +11,7 @@ class ContractMakeCommand extends GeneratorCommand
      *
      * @var string
      */
-	protected $name = 'make:contract';
+    protected $name = 'make:contract';
 
     /**
      * The console command description.
@@ -19,31 +19,30 @@ class ContractMakeCommand extends GeneratorCommand
      * @var string
      */
     protected $description = 'Create a new Contract interface';
-	
-	protected $type = 'Contract';
 
-	public function fire()
-	{
-		if (parent::fire() === false) {
-			return;
-		}
-	
-   }
+    protected $type = 'Contract';
 
-	protected function getStub()
-	{
-		return __DIR__.'/stubs/contract.stub';
-	}
+    public function handle()
+    {
+        if (parent::handle() === false) {
+            return;
+        }
+    }
 
-	protected function getDefaultNamespace($rootNamespace)
-	{
-		return $rootNamespace.'\Contracts';
-	}
+    protected function getStub()
+    {
+        return __DIR__.'/stubs/contract.stub';
+    }
 
-	protected function getOptions()
-	{
-		return [
-			['package', 'p', InputOption::VALUE_OPTIONAL, 'Pass in namespace for the package. I.E. -p "Lx3\Core"'],
-		];
-	}
+    protected function getDefaultNamespace($rootNamespace)
+    {
+        return $rootNamespace.'\Contracts';
+    }
+
+    protected function getOptions()
+    {
+        return [
+            ['package', 'p', InputOption::VALUE_OPTIONAL, 'Pass in namespace for the package. I.E. -p "Naust\Core"'],
+        ];
+    }
 }

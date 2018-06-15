@@ -1,10 +1,10 @@
 <?php
 
-namespace Naust\RepositoryCommand\Providers;
+namespace Naust\ArtisanBooster\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Naust\RepositoryCommand\Console\ContractMakeCommand;
-use Naust\RepositoryCommand\Console\RepositoryMakeCommand;
+use Naust\ArtisanBooster\Console\ContractMakeCommand;
+use Naust\ArtisanBooster\Console\RepositoryMakeCommand;
 
 /**
  * Created by PhpStorm.
@@ -12,7 +12,7 @@ use Naust\RepositoryCommand\Console\RepositoryMakeCommand;
  * Date: 09.03.2017
  * Time: 14.25.
  */
-class RepositoryCommandProvider extends ServiceProvider
+class ArtisanBoosterProvider extends ServiceProvider
 {
     protected $commands = [
         ContractMakeCommand::class,
