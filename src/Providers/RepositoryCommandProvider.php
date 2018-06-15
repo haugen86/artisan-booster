@@ -1,26 +1,27 @@
 <?php
-namespace Lx3\RepositoryCommand\Providers;
+
+namespace Naust\RepositoryCommand\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Lx3\RepositoryCommand\Console\ContractMakeCommand;
-use Lx3\RepositoryCommand\Console\RepositoryMakeCommand;
+use Naust\RepositoryCommand\Console\ContractMakeCommand;
+use Naust\RepositoryCommand\Console\RepositoryMakeCommand;
 
 /**
  * Created by PhpStorm.
  * User: haugen
  * Date: 09.03.2017
- * Time: 14.25
+ * Time: 14.25.
  */
 class RepositoryCommandProvider extends ServiceProvider
 {
-	protected $commands = [
-		ContractMakeCommand::class,
-		RepositoryMakeCommand::class,
-	];
+    protected $commands = [
+        ContractMakeCommand::class,
+        RepositoryMakeCommand::class,
+    ];
 
-	public function register()
-	{
-		// Register commands
-		$this->commands($this->commands);
-	}
+    public function register()
+    {
+        // Register commands
+        $this->commands($this->commands);
+    }
 }
