@@ -17,12 +17,10 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "laravel": {
-                "providers": [
-                    "Naust\\ArtisanBooster\\Providers\\ArtisanBoosterProvider"
-                ]
-            }
+        "laravel": {
+            "providers": [
+                "Naust\\ArtisanBooster\\Providers\\ArtisanBoosterProvider"
+            ]
         }
     }
 }
