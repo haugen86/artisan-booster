@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyFullModelClass;
+
+class DummyClass
+{
+
+	protected $model;
+
+	public function __construct(DummyModelClass $model)
+	{
+		$this->model = $model;
+	}
+}

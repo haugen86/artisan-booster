@@ -1,0 +1,16 @@
+{
+    "name": "lx3/repository-command",
+    "authors": [
+        {
+            "name": "Marius Engen Haugen",
+            "email": "marius@innit.no"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Lx3\\RepositoryCommand\\": "src"
+        }
+    },
+    "stash": "ssh://git@bitbucket.innit.no:7999/lar/lx3-repository-command.git"
+}

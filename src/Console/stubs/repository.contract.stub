@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyFullContract;
+
+class DummyClass implements DummyRepositoryContract
+{
+
+	protected $model;
+
+	public function __construct($model)
+	{
+		$this->model = $model;
+	}
+}
