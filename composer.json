@@ -9,7 +9,7 @@
     "description": "Adds extra commands to artisan",
     "require": {
         "php": "^7.1",
-        "laravel/framework": "^5.6.*",
+        "laravel/framework": "^5.6",
         "naust/artisan-booster": "@dev"
     },
     "autoload": {
